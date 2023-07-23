@@ -30,7 +30,7 @@ app.use(bodyParser.json({ extended: true }));
 
 app.use(cors({
   credentials: true,
-  origin: 'http://localhost:3000'
+  origin: 'http://localhost:3003'
 }));
 
 app.listen(port, () => console.log("Backend server live on " + port));
