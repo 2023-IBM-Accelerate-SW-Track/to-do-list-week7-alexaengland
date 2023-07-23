@@ -2,6 +2,7 @@ import axios from "axios";
 
 const baseUrl = "http://localhost:8080";
 
+
 export const authenticate = async (username, password) => {
     try {
         await axios.get(`${baseUrl}/authenticate`, {
@@ -28,15 +29,3 @@ export const createUser = async (username, password) => {
         console.log(e);
     }
 }
-
-Axios({
-    method: "POST",
-    url: "http://localhost:8080/item",
-    data: {jsonObject},
-    headers: {
-      "Content-Type": "application/json"
-    },
-    withCredentials: true
-  }).then(res => {
-    console.log(res.data.message);
-  });
